@@ -14,7 +14,7 @@ Singularity recipe for [lowcharts](https://github.com/juan-leon/lowcharts).
 Copy the
 
 * `SIF` file
-* and the `lowcharts` scripts
+* and the `lowcharts` script
 
 to `/opt/packages/lowcharts/0.4.2`.
 
