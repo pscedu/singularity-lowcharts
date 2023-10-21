@@ -6,7 +6,7 @@ From: debian:latest
     EMAIL icaoberg@psc.edu
     SUPPORT help@psc.edu
     REPOSITORY http://gitub.com/pscedu/singularity-lowcharts
-    COPYRIGHT Copyright © 2021 Pittsburgh Supercomputing Center. All Rights Reserved.  
+    COPYRIGHT Copyright © 2021-2023 Pittsburgh Supercomputing Center. All Rights Reserved.  
     VERSION 0.4.2
 
 %post
@@ -16,3 +16,6 @@ From: debian:latest
     tar -xvf lowcharts-v0.4.2-x86_64-unknown-linux-gnu.tar.gz && rm -f lowcharts-v0.4.2-x86_64-unknown-linux-gnu.tar.gz
     mv lowcharts /usr/local/bin
     apt clean
+
+%runscript
+    /usr/local/bin/lowcharts "$@"
