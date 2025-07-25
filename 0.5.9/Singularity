@@ -12,8 +12,8 @@ From: debian:latest
 %post
     apt update
     apt install -y wget
-    wget -nc https://github.com/juan-leon/lowcharts/releases/download/v0.5.8/lowcharts_0.5.9_amd64.deb
-    dpkg -i lowcharts_0.5.9_amd64.deb && rm -fv lowcharts_0.5.9_amd64.deb
+    wget -nc https://github.com/juan-leon/lowcharts/releases/download/v0.5.9/lowcharts_0.5.9-1_amd64.deb
+    dpkg -i lowcharts_0.5.9-1_amd64.deb && rm -fv lowcharts_0.5.9-1_amd64.deb
     apt remove -y wget
     apt clean
 
